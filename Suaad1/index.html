@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected visual work, edited by Suad</title>
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons for social links and buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for typography (Playfair Display & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f7f3ee 0%, #ebe2d8 50%, #f3ebe1 100%);
+            color: #2b2b2b;
+            min-height: 100vh;
+        }
+
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .video-card-ratio {
+            position: relative;
+            padding-bottom: 177.78%; /* 9:16 aspect ratio for portrait videos */
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Glassmorphism effect for video cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .social-shadow {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .social-shadow:hover {
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+            transform: translateY(-3px);
+        }
+
+        /* Custom scrollbar for clean aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ebe2d8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5b8a5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-between min-h-screen px-4 py-10 sm:px-6">
+
+    <main class="w-full max-w-md mx-auto text-center">
+        
+        <!-- Header Title Section -->
+        <header class="mb-8">
+            <h1 class="serif-title italic text-3xl sm:text-4xl font-semibold text-gray-900 leading-tight mb-4">
+                Selected visual work, edited by Suad
+            </h1>
+            <p class="text-gray-600 text-sm sm:text-base font-light px-2">
+                I create videos designed to engage, connect, and inspire.
+            </p>
+        </header>
+
+        <!-- Section Header -->
+        <div class="my-8">
+            <h2 class="serif-title italic text-2xl font-semibold text-gray-900 tracking-wide">
+                my work
+            </h2>
+            <div class="w-12 h-0.5 bg-amber-800/30 mx-auto mt-2 rounded-full"></div>
+        </div>
+
+        <div class="space-y-6" id="video-list">
+
+            <!-- Video Item 1: YouTube Short -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden group">
+                    <div id="player-mwHAlj0dUt0" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/mwHAlj0dUt0/hqdefault.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                        <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #1</span>
+                        
+                        <!-- Play & External Watch Buttons -->
+                        <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                            <button onclick="playVideo('mwHAlj0dUt0')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                                <i class="fas fa-play ml-1"></i>
+                            </button>
+                        </div>
+
+                        <div class="relative z-10 flex justify-center">
+                            <a href="https://youtu.be/mwHAlj0dUt0" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                                <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 2: YouTube Short -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden group">
+                    <div id="player--VUQ7GpSugg" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/-VUQ7GpSugg/hqdefault.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                        <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #2</span>
+                        
+                        <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                            <button onclick="playVideo('-VUQ7GpSugg')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                                <i class="fas fa-play ml-1"></i>
+                            </button>
+                        </div>
+
+                        <div class="relative z-10 flex justify-center">
+                            <a href="https://youtu.be/-VUQ7GpSugg" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                                <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 3: YouTube Short -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden group">
+                    <div id="player-1JOlmuuwgb0" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/1JOlmuuwgb0/hqdefault.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                        <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #3</span>
+                        
+                        <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                            <button onclick="playVideo('1JOlmuuwgb0')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                                <i class="fas fa-play ml-1"></i>
+                            </button>
+                        </div>
+
+                        <div class="relative z-10 flex justify-center">
+                            <a href="https://youtu.be/1JOlmuuwgb0" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                                <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 4: YouTube Short -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden group">
+                    <div id="player-4R-GoISa8oY" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/4R-GoISa8oY/hqdefault.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                        <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #4</span>
+                        
+                        <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                            <button onclick="playVideo('4R-GoISa8oY')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                                <i class="fas fa-play ml-1"></i>
+                            </button>
+                        </div>
+
+                        <div class="relative z-10 flex justify-center">
+                            <a href="https://youtu.be/4R-GoISa8oY" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                                <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Item 5: YouTube Short -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden group">
+                    <div id="player-or3O3V4cWEM" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/or3O3V4cWEM/hqdefault.jpg');">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                        <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #5</span>
+                        
+                        <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                            <button onclick="playVideo('or3O3V4cWEM')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                                <i class="fas fa-play ml-1"></i>
+                            </button>
+                        </div>
+
+                        <div class="relative z-10 flex justify-center">
+                            <a href="https://youtube.com/shorts/or3O3V4cWEM" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                                <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Reel Item 1 -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden">
+                    <iframe src="https://www.instagram.com/reel/DWqgiX-jdH_/embed" class="absolute inset-0 w-full h-full border-0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Instagram Reel Item 2 -->
+            <div class="glass-card rounded-2xl p-2.5 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="video-card-ratio rounded-xl bg-black overflow-hidden">
+                    <iframe src="https://www.instagram.com/reel/DXKnJ7djc6c/embed" class="absolute inset-0 w-full h-full border-0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 mb-6 flex justify-center items-center gap-5">
+            <a href="http://www.youtube.com/@Soadeyad2" target="_blank" class="w-13 h-13 w-12 h-12 rounded-full bg-white text-red-600 flex items-center justify-center text-xl social-shadow transition-all duration-300 hover:bg-red-600 hover:text-white" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@soadeyad2?_r=1&_t=ZS-9ADqze9DD1x" target="_blank" class="w-12 h-12 rounded-full bg-white text-gray-900 flex items-center justify-center text-xl social-shadow transition-all duration-300 hover:bg-black hover:text-white" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/soadeyad2?stkn=MWpuZWY3dG1lNDQybg%3D%3D&utm_source=qr" target="_blank" class="w-12 h-12 rounded-full bg-white text-pink-600 flex items-center justify-center text-xl social-shadow transition-all duration-300 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:text-white" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <!-- Footer Text -->
+        <footer class="text-xs text-gray-500 font-light mb-4">
+            © Suad. All rights reserved.
+        </footer>
+    </main>
+
+    <script>
+        // List of all YouTube video IDs on the page
+        const youtubeIds = ['mwHAlj0dUt0', '-VUQ7GpSugg', '1JOlmuuwgb0', '4R-GoISa8oY', 'or3O3V4cWEM'];
+        let activeVideoId = null;
+
+        /**
+         * Safely loads and plays a YouTube video while stopping any other active video.
+         */
+        function playVideo(videoId) {
+            // If another video is playing, reset its player to the initial thumbnail state
+            if (activeVideoId && activeVideoId !== videoId) {
+                resetVideoPlayer(activeVideoId);
+            }
+
+            activeVideoId = videoId;
+            const container = document.getElementById(`player-${videoId}`);
+
+            if (!container) return;
+
+            // Replace player container content with embedded iframe
+            // تم تغيير youtube-nocookie إلى youtube العادي وإضافة playsinline و mute لتخطي حظر المتصفحات
+            container.outerHTML = `
+                <div id="player-${videoId}" class="absolute inset-0 w-full h-full bg-black">
+                    <iframe 
+                        src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1" 
+                        class="w-full h-full border-0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            `;
+        }
+
+        /**
+         * Resets a video container back to its cover thumbnail & play button
+         */
+        function resetVideoPlayer(videoId) {
+            const playerElement = document.getElementById(`player-${videoId}`);
+            if (!playerElement) return;
+
+            // Find index number for label display
+            const index = youtubeIds.indexOf(videoId) + 1;
+
+            playerElement.outerHTML = `
+                <div id="player-${videoId}" class="absolute inset-0 flex flex-col justify-between p-4 bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/${videoId}/hqdefault.jpg');">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all"></div>
+                    <span class="relative z-10 text-left text-xs font-medium text-white/90 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full w-max">Short #${index}</span>
+                    
+                    <div class="relative z-10 flex flex-col items-center gap-3 my-auto">
+                        <button onclick="playVideo('${videoId}')" class="w-16 h-16 bg-red-600/90 text-white rounded-full flex items-center justify-center text-2xl shadow-lg transition-all duration-300 transform group-hover:scale-110 hover:bg-red-600">
+                            <i class="fas fa-play ml-1"></i>
+                        </button>
+                    </div>
+
+                    <div class="relative z-10 flex justify-center">
+                        <a href="https://youtu.be/${videoId}" target="_blank" class="text-xs text-white/90 bg-black/60 hover:bg-black/80 px-3 py-1.5 rounded-lg backdrop-blur-md transition-all flex items-center gap-1.5">
+                            <i class="fab fa-youtube text-red-500"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
